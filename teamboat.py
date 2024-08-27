@@ -40,7 +40,7 @@ parser.add_argument('--saveCookieInfo', dest='INFOFILE', type=str,
                     help='Store the raw cookie info in a file')
 requiredNamed = parser.add_argument_group('required arguments')
 
-# Takes the file path to the cookies file. By default in windows the path is C:\Users\Tigo\AppData\Roaming\Microsoft\Teams\Cookies. Linux and mac cookie files should work aswell.
+# Takes the file path to the cookies file. By default in windows the path is C:\Users\NAME\AppData\Roaming\Microsoft\Teams\Cookies. Linux and mac cookie files should work aswell.
 requiredNamed.add_argument('--cookies', dest='FILENAME', type=str,
                            help='Define the cookie file', required=True)
 args = parser.parse_args()
